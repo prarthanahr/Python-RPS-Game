@@ -162,22 +162,7 @@ class Ui_Dialog(object):
         self.toolButton_2.clicked.connect(self.paper)
         self.toolButton.clicked.connect(self.scissor)
 
-    def rock(self):
-        # print("Rock")
-        self.label_4.setPixmap(QtGui.QPixmap("graphics/ROCK.png"))
-        self.run("Rock")
-
-    def paper(self):
-        # print("Paper")
-        self.label_4.setPixmap(QtGui.QPixmap("graphics/PAPER.png"))
-        self.run("Paper")
-
-    def scissor(self):
-        # print("Scissors")
-        self.label_4.setPixmap(QtGui.QPixmap("graphics/SCISSORS.png"))
-        self.run("Scissor")
-
-    def run(self, player_c):
+   
 
         rn = random.randint(0, 2)
 
